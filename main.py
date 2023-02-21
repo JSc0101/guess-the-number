@@ -20,10 +20,21 @@ while guess__taken < 6:
     guess = input()
     guess = int(guess)
 
-    guess__taken  += 1  
+    guess__taken += 1
     if guess < number__ale:
         print("Your guess is too low")
     if guess > number__ale:
         print("Your guess is to high")
     if guess == number__ale:
         break
+
+if guess == number__ale:
+    guess__taken = str(guess__taken)
+    print(
+        f"Good Job {username} you guessed my number in {guess__taken}guesses")
+
+if guess != number__ale:
+    number__ale = str(number__ale)
+    print(f"No, the number que i was thinking of was {number__ale}")
+
+# M;=4t38cTK:yNd$    
